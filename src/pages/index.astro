@@ -24,7 +24,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                 <p class="cs-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
                 </p>
-                <a href="" class="cs-button-solid">Book an Appointment</a>
+                <a href="" class="cs-button-solid">Book Now</a>
                 <a href="" class="cs-button-transparent">Our Services</a>
             </div>
             <div class="cs-stat-group">
@@ -293,73 +293,73 @@ const optimizedImage = await getOptimizedImage(landingImage)
             }
 
             .cs-button-solid {
-                font-size: (16/16rem);
-                /* 46px - 56px */
-                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-                text-decoration: none;
-                font-weight: 700;
-                text-align: center;
-                margin: 0;
-                margin-right: (24/16rem);
-                color: #fff;
-                min-width: (150/16rem);
-                padding: 0 (24/16rem);
-                background-color: var(--primary);
-                border-radius: (4/16rem);
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                /* prevents padding from adding to the width */
-                box-sizing: border-box;
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            margin-right: (24/16rem);
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
 
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
                 &:before {
-                    content: "";
-                    position: absolute;
-                    height: 100%;
-                    width: 0%;
-                    background: #000;
-                    opacity: 1;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    border-radius: (4/16rem);
-                    transition: width 0.3s;
-                }
-
-                &:hover {
-                    &:before {
-                        width: 100%;
-                    }
+                    width: 100%;
                 }
             }
+        }
 
-            .cs-button-transparent {
-                font-size: (16/16rem);
-                /* 46px - 56px */
-                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-                text-decoration: none;
-                font-weight: 700;
-                text-align: center;
-                margin: 0;
-                color: var(--primary);
-                min-width: (150/16rem);
-                padding: 0 (24/16rem);
-                background-color: transparent;
-                border-radius: (4/16rem);
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                /* prevents padding from adding to the width */
-                box-sizing: border-box;
-                transition:
-                    background-color 0.3s,
-                    color 0.3s;
+        .cs-button-transparent {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: var(--primary);
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: transparent;
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            transition:
+                background-color 0.3s,
+                color 0.3s;
 
-                &:hover {
-                    background-color: var(--primary);
-                    color: #fff;
-                }
+            &:hover {
+                background-color: var(--primary);
+                color: #fff;
             }
+        }
+
 
             .cs-stat-group {
                 width: 100%;
@@ -389,7 +389,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                 justify-content: center;
                 align-items: center;
                 &:nth-of-type(1) {
-                    background-color: rgba(219, 70, 107, 0.96);
+                    background-color: rgba(69, 24, 41, 0.98);
                 }
                 &:nth-of-type(2) {
                     background-color: rgba(227, 135, 158, 0.96);
@@ -839,7 +839,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                   content: "";
                   width: 0;
                   height: 100%;
-                  background: #000;
+                  background: #451829;
                   opacity: 1;
                   position: absolute;
                   top: 0;
